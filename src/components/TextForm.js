@@ -16,7 +16,7 @@ export default function TextForm(props) {
     }
     const handleinv = ()=>{
         //console.log("Uppercase was clicked" + text);
-        let reversedString = text.split("").reduce((acc, char) => char + acc, "");
+        let reversedString = text.split("").reverse().join("");
         setText(reversedString);
     }
     const capatalize = ()=>{
